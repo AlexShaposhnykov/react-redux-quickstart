@@ -1,0 +1,43 @@
+// Main colors
+
+$white: #FFFFFF;
+$red: #F44336;
+$blue: #006CFF;
+$green: #97cb36;
+$amber: #FFA600;
+$black: #000000;
+
+// Primary color
+$primary: #006CFF;
+
+//Primary shades
+$primaryLightest: #e5f0ff;
+$primaryLighter:#b2d2ff;
+$primaryLight: #7fb5ff;
+$primaryDarker: #0056cc;
+$primaryDark: #004bb2;
+$primaryDarkest: #00367f;
+
+// Text colors
+
+$hintTextColor: rgba(0,0,0,.26);
+$secondaryTextColor: rgba(0,0,0,.54);
+$additionalTextColor: rgba(0,0,0,0.67);
+$textColor: rgba(0,0,0,.87);
+$linkColor: var($primary);
+$textColor-on-dark: var($white);
+
+// Gray colors
+
+$grayLightest: #ced8e5;
+$grayLighter: #b7c0cc;
+$grayLight: #a0a8b2;
+$grayBase: #72787f;
+$grayDark: #5b6066;
+$grayDarker: #44484c;
+$grayDarkest: #2d3033;
+
+// Feedback colors
+$warningColor: var($amber);
+$successColor: var($green);
+$errorColor: var($red);

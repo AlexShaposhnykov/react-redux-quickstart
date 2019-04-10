@@ -1,0 +1,63 @@
+@import "index.scss";
+
+html, body {
+    font-family: $fontFamilyBase;
+    font-weight: $fontWeightNormal;
+    line-height: 20px;
+    color: $textColor;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: $fontSizeBase;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $fontFamilyBase;
+    font-size: $fontSizeBase;
+    font-weight: $fontWeightNormal;
+    line-height: 1;
+    letter-spacing: 0;
+    color: $textColor; 
+}
+
+p {
+    font-size: $fontSizeBase;
+    font-weight: $fontWeightNormal;
+    line-height: 1.5;
+    letter-spacing: 0;
+    color: $textColor;
+    margin-bottom: 16px;
+}
+
+a {
+    color: $primary;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .3s ease;
+
+    &:hover {
+        text-decoration: none;
+        color: lighten($primary, 15%);
+    }
+}
+
+ul, ol {
+    font-size: $fontSizeBase;
+    font-weight: $fontWeightNormal;
+    line-height: 24px;
+    letter-spacing: 0;
+}
