@@ -53,8 +53,16 @@ module.exports = {
             {
                 test: /\.(scss|sass)$/,
                 use: [
+                    { loader: 'classnames-loader' },
                     { loader: 'style-loader' },
-                    { loader: 'css-loader' },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: true,
+                            sourceMap: true,
+                            localIdentName: '[path][name]__[local]--[hash:base64:5]',
+                        },
+                    },
                     { loader: 'postcss-loader' },
                     { loader: 'sass-loader' },
                 ],

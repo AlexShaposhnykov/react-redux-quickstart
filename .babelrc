@@ -1,0 +1,15 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "browsers": ["last 7 versions"]
+                },
+                "debug": true
+            }
+        ],
+        "@babel/preset-react"
+    ],
+    "plugins": ["@babel/plugin-transform-runtime", "react-hot-loader/babel"],
+}
