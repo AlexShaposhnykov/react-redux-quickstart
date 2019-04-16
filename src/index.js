@@ -1,5 +1,5 @@
+/* eslint-disable global-require */
 /* eslint no-underscore-dangle: 0 */
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore, applyMiddleware, compose } from 'redux';
@@ -18,6 +18,7 @@ const store = createStore(
     composeEnhancers(applyMiddleware(thunk)),
 );
 
-const configuredApp = <Root store={store} routes={routes} />;
-
-ReactDOM.render(configuredApp, document.getElementById('root'));
+ReactDOM.render(
+    <Root store={store} routes={routes} />,
+    document.getElementById('root'),
+);
