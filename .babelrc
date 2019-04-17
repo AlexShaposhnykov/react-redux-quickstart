@@ -6,7 +6,6 @@
                 "targets": {
                     "browsers": ["last 7 versions"]
                 },
-                "debug": true
             }
         ],
         "@babel/preset-react"

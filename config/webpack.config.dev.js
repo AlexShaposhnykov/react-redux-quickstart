@@ -98,4 +98,5 @@ module.exports = {
         }),
     ],
     bail: true,
+    stats: 'minimal',
 };
